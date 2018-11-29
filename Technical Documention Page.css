@@ -1,0 +1,36 @@
+/* Universal Styles */
+body,
+html {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+.container {
+  display: grid;
+  grid-template-columns: 25% auto;
+  height: 100%;
+}
+
+/* Links Styles */
+.links {
+  border-right: solid gray;
+}
+
+.links ul {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.links li {
+  border-top: solid black 1px;
+  padding: 8px 0 8px 0;
+  line-height: 1.5;
+}
