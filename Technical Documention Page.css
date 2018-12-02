@@ -8,10 +8,15 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+  padding-left: 50px;
 }
 
-li {
-  list-style: none;
+h1 {
+  padding-left: 20px;
+}
+
+h2 {
+  padding-left: 20px;
 }
 .container {
   display: grid;
@@ -33,4 +38,19 @@ li {
   border-top: solid black 1px;
   padding: 8px 0 8px 0;
   line-height: 1.5;
+  list-style: none;
+}
+
+/* Info Styling */
+.info {
+  padding-left: 25px;
+}
+
+.info p {
+  text-indent: 10px;
+}
+
+.info li {
+  padding-bottom: 15px;
+  text-indent: 10px;
 }
