@@ -1,7 +1,10 @@
 /* Universal Styles */
 body,
 html {
-  margin: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
   height: 100%;
   font-family: 'Open Sans', Arial, sans-serif;
 }
@@ -46,11 +49,15 @@ h2 {
   padding-left: 25px;
 }
 
-.info p {
-  text-indent: 10px;
-}
-
 .info li {
   padding-bottom: 15px;
   text-indent: 10px;
+}
+
+.info .code {
+  background: #f7f7f7;
+  padding-left: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
