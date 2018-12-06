@@ -244,6 +244,65 @@
             and can contain alphabetic, numeric, or underscore characters.
           </p>
           <div class="code"><code>const PI = 3.14;</code></div>
+          <p>
+            A constant cannot change value through assignment or be re-declared
+            while the script is running. It has to be initialized to a value.
+          </p>
+          <p>
+            The scope rules for constants are the same as those for let block
+            scope variables. If the const keyword is omitted, the identifier is
+            assumed to represent a variable.
+          </p>
+          <p>
+            You cannot declare a constant with the same name as a function or
+            variable in the same scope. For example:
+          </p>
+          <div class="code">
+            <code>
+              // THIS WILL CAUSE AN ERROR<br />
+              function f() {};<br />
+              const f = 5;<br />
+              // THIS WILL CAUSE AN ERROR ALSO<br />
+              &nbsp;function f() {<br />
+              &nbsp;const g = 5;<br />
+              &nbsp;var g;<br />
+              &nbsp;//statements<br />
+              }
+            </code>
+          </div>
+          <p>
+            However, object attributes are not protected, so the following
+            statement is executed without problems.
+          </p>
+          <div class="code">
+            <code>
+              const MY_OBJECT = {"key": "value"};<br />
+              MY_OBJECT.key = "otherValue";
+            </code>
+          </div>
+        </div>
+        <h2>Data types</h2>
+        <div class="info">
+          <p>The latest ECMAScript standard defines seven data types:</p>
+          <ul>
+            <li>Six data types that are primitives:</li>
+            <ul>
+              <li>Boolean. true and false.</li>
+              <li>
+                null. A special keyword denoting a null value. Because
+                JavaScript is case-sensitive, null is not the same as Null,
+                NULL, or any other variant.
+              </li>
+              <li>undefined. A top-level property whose value is undefined.</li>
+              <li>Number. 42 or 3.14159.</li>
+              <li>String. "Howdy"</li>
+              <li>
+                Symbol (new in ECMAScript 2015). A data type whose instances are
+                unique and immutable.
+              </li>
+            </ul>
+            <li>and Objects</li>
+          </ul>
         </div>
       </div>
     </div>
