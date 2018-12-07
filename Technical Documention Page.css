@@ -8,18 +8,20 @@ html {
   height: 100%;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-  padding-left: 50px;
-}
 
 h1 {
   padding-left: 20px;
 }
 
-h2 {
+header {
   padding-left: 20px;
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 .container {
   display: grid;
@@ -53,22 +55,29 @@ h2 {
   list-style: none;
 }
 
+.links a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 50px;
+}
+
 /* Content Styling */
 .content {
   overflow: auto;
+  padding-left: 10px;
 }
 
-/* Info Styling */
-.info {
+/* Main-section Styling */
+.main-section {
   padding-left: 25px;
 }
 
-.info li {
+.main-section li {
   padding-bottom: 15px;
   text-indent: 10px;
 }
 
-.info .code {
+.main-section .code {
   background: #f7f7f7;
   padding-left: 10px;
   margin-left: 10px;
