@@ -14,7 +14,6 @@ h1 {
 }
 
 header {
-  padding-left: 20px;
   display: block;
   font-size: 1.5em;
   margin-top: 0.83em;
@@ -25,40 +24,32 @@ header {
 }
 .container {
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: auto;
   height: 100%;
   position: fixed;
 }
 
 /* Links Styles */
-.links {
-  border-right: solid gray;
-  overflow: auto;
-}
-
 .links div {
   display: block;
 }
 
 .links ul {
+  border: 1px solid black;
   padding-left: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  height: 90%;
+  height: 150px;
   overflow: auto;
 }
 
 .links li {
   border-top: solid black 1px;
-  padding: 8px 0 8px 0;
-  line-height: 2;
+  padding: 8px 0 8px 8px;
   list-style: none;
 }
 
 .links a {
   text-decoration: none;
   color: inherit;
-  padding-left: 50px;
 }
 
 /* Content Styling */
@@ -83,4 +74,37 @@ header {
   margin-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Universal Styles */
+  .container {
+    grid-template-columns: 25% auto;
+  }
+
+  /* Links Styles */
+  .links {
+    border-right: solid gray;
+    overflow: auto;
+  }
+
+  .links ul {
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 90%;
+    overflow: auto;
+    border: none;
+  }
+
+  .links li {
+    border-top: solid black 1px;
+    padding: 8px 0 8px 0;
+    line-height: 2;
+    list-style: none;
+  }
+
+  .links a {
+    padding-left: 50px;
+  }
 }
